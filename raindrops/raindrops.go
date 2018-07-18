@@ -23,12 +23,10 @@ func Convert(n int) string {
 }
 
 func Factor(x int) []int {
-	fact := make([]int, 0)
-	var save int = 0
+	var fact []int
 	for i := 1; i <= x; i++ {
 		if x%i == 0 {
-			fact[save] = i
-			save++
+			fact = append(fact, i)
 		}
 	}
 	return fact
