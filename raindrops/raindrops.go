@@ -22,7 +22,7 @@ func Convert(n int) string {
 	return store
 }
 
-func factor(x int) []int {
+func Factor(x int) []int {
 	fact := make([]int, 0)
 	var save int = 0
 	for i := 1; i <= x; i++ {
